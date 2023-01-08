@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hola Mundo!</title>
+</head>
+<body>
+  
+<main id="app">
+</main>
+
+<!-- React -->
+<script src="https://fb.me/react-15.1.0.js"></script>
+<script src="https://fb.me/react-dom-15.1.0.js"></script>
+<!-- Babel -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!-- Your code -->
+<script type="text/babel">
+
+  var HelloWorld = React.createClass({
+  
+    render: function () {
+      return (
+        <h1>Hola Mundo</h1>
+      );
+    }
+  
+  });
+  
+  //Renders our component output inside our `main` element with the id of "app"
+  ReactDOM.render(
+  	<HelloWorld />, document.getElementById("app")
+  );
+
+  </script>
+</body>
+</html>
